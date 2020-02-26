@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://RussellWestBrank.github.io</id>
+    <title>Gridea</title>
+    <updated>2020-02-26T11:52:45.010Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://RussellWestBrank.github.io"/>
+    <link rel="self" href="https://RussellWestBrank.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://RussellWestBrank.github.io/images/avatar.png</logo>
+    <icon>https://RussellWestBrank.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[HTML、CSS学习笔记]]></title>
+        <id>https://RussellWestBrank.github.io/post/htmlcss-xue-xi-bi-ji/</id>
+        <link href="https://RussellWestBrank.github.io/post/htmlcss-xue-xi-bi-ji/">
+        </link>
+        <updated>2020-02-26T08:48:54.000Z</updated>
+        <content type="html"><![CDATA[<p>#插件<br>
+easy less(css样式结构更清晰）live Server(浏览器同步，避免重复刷新）)<br>
+vs color picker(颜色拾取）<br>
+#HTML<br>
+http（协议）<br>
+Localhost=www.baidu.com(域名）<br>
+##FORM表单<br>
+1.如果要被正确提交每个输入字段必须设置一个name属性<br>
+2.placeholder<br>
+placeholder 属性规定用以描述输入字段预期值的提示（样本值或有关格式的简短描述）。<br>
+该提示会在用户输入值之前显示在输入字段中。<br>
+HTML5<br>
+画布？？？<br>
+#CSS<br>
+##第一天<br>
+1.样式的之间的互相导入：@import url(&quot;&quot;);<br>
+2.选择器<br>
+——nth-child(-n+2) 前两个<br>
+——h1:nth-of-type(2) 第二个h1  （伪类选择器）<br>
+##第二天<br>
+1.表单制作（明天实操）<br>
+2.css权重可叠加 ID:0100 CLASS、属性选择器：0010  标签：0001<br>
+3.通用CSS（字体，字体大小）一般用html{} 不用*{}    因为<em>的权重为0继承的权重为NULL影响后续继承<br>
+##第三天<br>
+1.字体大小 单位px，％=em（相对于父级）<br>
+2.字体颜色 #000000，rgba(红，绿，蓝，透明度）<br>
+3.行高 单位px，em倍数（常用）</em>**<br>
+word文档能做的CSS基本都能做<br>
+##第四天<br>
+1.上下边距不是叠加而是取最大值<br>
+例 ul&gt;li<br>
+2.行元素？？？块级元素？？？<br>
+##第五天<br>
+1.文字环绕图片效果——图片一定要是有透明度的png图片<br>
+可以直接用形状代替<br>
+##第六天<br>
+1.未设置宽高的情况下可通过点位来设置尺寸<br>
+2.多级点位，参考最近的父级<br>
+3.定位定的是中心点<br>
+4.由于加浮动后子级元素不占空间位，所以父级的高度无法随子级变化<br>
+解决方案：A.给父级加overflow清除浮动,产生BFC机制<br>
+B.在父元素内部最后面添加一个没有高度的了元素，并使用clear:both 。<br>
+##第七天<br>
+1.字无法居中（偏上下）可以试试改变行高<br>
+2.鼠标放上去有小手:cursor：pointer<br>
+##第八天<br>
+1.定位：相对定位，绝对定位，粘性定位（如果同级叠加不同级顶走：标题），固定定位（固定在整个页面，导航栏、二维码、广告）<br>
+2.颜色渐变例子： background:linear-gradient(to bottom,#f3f3f3,#ddd,#f3f3f3); 白灰白 #ccc 又比#ddd白</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://RussellWestBrank.github.io/post/hello-gridea/</id>
+        <link href="https://RussellWestBrank.github.io/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="http://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>

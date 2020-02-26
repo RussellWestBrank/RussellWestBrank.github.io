@@ -1,0 +1,218 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HTML、CSS学习笔记 | Gridea</title>
+<link rel="shortcut icon" href="https://RussellWestBrank.github.io/favicon.ico?v=1582717940911">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://RussellWestBrank.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="HTML、CSS学习笔记 | Gridea - Atom Feed" href="https://RussellWestBrank.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="#插件
+easy less(css样式结构更清晰）live Server(浏览器同步，避免重复刷新）)
+vs color picker(颜色拾取）
+#HTML
+http（协议）
+Localhost=www.baidu.com(域名）
+##F..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://RussellWestBrank.github.io">
+  <img class="avatar" src="https://RussellWestBrank.github.io/images/avatar.png?v=1582717940911" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              HTML、CSS学习笔记
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-02-26
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>#插件<br>
+easy less(css样式结构更清晰）live Server(浏览器同步，避免重复刷新）)<br>
+vs color picker(颜色拾取）<br>
+#HTML<br>
+http（协议）<br>
+Localhost=www.baidu.com(域名）<br>
+##FORM表单<br>
+1.如果要被正确提交每个输入字段必须设置一个name属性<br>
+2.placeholder<br>
+placeholder 属性规定用以描述输入字段预期值的提示（样本值或有关格式的简短描述）。<br>
+该提示会在用户输入值之前显示在输入字段中。<br>
+HTML5<br>
+画布？？？<br>
+#CSS<br>
+##第一天<br>
+1.样式的之间的互相导入：@import url(&quot;&quot;);<br>
+2.选择器<br>
+——nth-child(-n+2) 前两个<br>
+——h1:nth-of-type(2) 第二个h1  （伪类选择器）<br>
+##第二天<br>
+1.表单制作（明天实操）<br>
+2.css权重可叠加 ID:0100 CLASS、属性选择器：0010  标签：0001<br>
+3.通用CSS（字体，字体大小）一般用html{} 不用*{}    因为<em>的权重为0继承的权重为NULL影响后续继承<br>
+##第三天<br>
+1.字体大小 单位px，％=em（相对于父级）<br>
+2.字体颜色 #000000，rgba(红，绿，蓝，透明度）<br>
+3.行高 单位px，em倍数（常用）</em>**<br>
+word文档能做的CSS基本都能做<br>
+##第四天<br>
+1.上下边距不是叠加而是取最大值<br>
+例 ul&gt;li<br>
+2.行元素？？？块级元素？？？<br>
+##第五天<br>
+1.文字环绕图片效果——图片一定要是有透明度的png图片<br>
+可以直接用形状代替<br>
+##第六天<br>
+1.未设置宽高的情况下可通过点位来设置尺寸<br>
+2.多级点位，参考最近的父级<br>
+3.定位定的是中心点<br>
+4.由于加浮动后子级元素不占空间位，所以父级的高度无法随子级变化<br>
+解决方案：A.给父级加overflow清除浮动,产生BFC机制<br>
+B.在父元素内部最后面添加一个没有高度的了元素，并使用clear:both 。<br>
+##第七天<br>
+1.字无法居中（偏上下）可以试试改变行高<br>
+2.鼠标放上去有小手:cursor：pointer<br>
+##第八天<br>
+1.定位：相对定位，绝对定位，粘性定位（如果同级叠加不同级顶走：标题），固定定位（固定在整个页面，导航栏、二维码、广告）<br>
+2.颜色渐变例子： background:linear-gradient(to bottom,#f3f3f3,#ddd,#f3f3f3); 白灰白 #ccc 又比#ddd白</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://RussellWestBrank.github.io/post/hello-gridea/">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://RussellWestBrank.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
