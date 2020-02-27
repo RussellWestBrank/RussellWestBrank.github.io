@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://RussellWestBrank.github.io</id>
     <title>Gridea</title>
-    <updated>2020-02-27T01:14:43.896Z</updated>
+    <updated>2020-02-27T11:40:02.858Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://RussellWestBrank.github.io"/>
     <link rel="self" href="https://RussellWestBrank.github.io/atom.xml"/>
@@ -64,6 +64,80 @@
 <h3 id="第八天"><strong>第八天</strong></h3>
 <p>1.定位：相对定位，绝对定位，粘性定位（如果同级叠加不同级顶走：标题），固定定位（固定在整个页面，导航栏、二维码、广告）</p>
 <p>2.颜色渐变例子： background:linear-gradient(to bottom,#f3f3f3,#ddd,#f3f3f3); 白灰白 #ccc 又比#ddd白</p>
+<h3 id="第九天弹性盒模型"><strong>第九天(弹性盒模型)</strong></h3>
+<ol>
+<li>
+<h5 id="displayflexdisplayinline-flex类似于行级块应用较少">display:flex（display:inline-flex类似于行级块，应用较少）</h5>
+<p>​        作用：让当前元素形成弹性盒，控制子元素（灵活元素）的布局。<br>
+​        特点：<br>
+​            a:在弹性盒里面的子元素,都能直接设置宽高。<br>
+​            b:弹性盒子里面的子元素，都是沿着“主轴”排列。  默认情况下X轴为“主轴”<br>
+​            c:让单一一个子元素在弹性盒里面左右上下居中。直接给子元素添加margin:auto即可。</p>
+</li>
+<li>
+<h5 id="flex-direction">flex-direction</h5>
+<p>​        作用：改变主轴的排列方向<br>
+​        属性值：<br>
+​            row   X轴为主轴<br>
+​            column    Y轴为主轴<br>
+​            row-reverse   X轴为主轴,反向排列<br>
+​            column-reverse   Y轴为主轴，反向排列</p>
+</li>
+<li>
+<h5 id="flex-wrap">flex-wrap</h5>
+<p>​        作用：控制弹性元素溢出换行处理</p>
+<p>​         属性值：</p>
+<p>​              a.nowrap   不换行（默认）</p>
+<p>​              b.wrap        换行</p>
+<p>​              c.wrap-reverse    反向换行</p>
+<p>​        特点：宽、高不够皆可换行</p>
+</li>
+<li>
+<h5 id="flex-flow">flex-flow</h5>
+<p>​        作用：合并flex-direction、flex-wrap</p>
+<p>​         属性值：</p>
+<p>​               a.direction+wrap</p>
+</li>
+<li>
+<h5 id="justify-content">justify-content</h5>
+<p>​        作用：控制元素在主轴上的排列方式</p>
+<p>​        属性值：</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flex-start</td>
+<td>从主轴起始段开始排列</td>
+</tr>
+<tr>
+<td>flex-end</td>
+<td>从主轴末端开始排列</td>
+</tr>
+<tr>
+<td>center</td>
+<td>在主轴居中</td>
+</tr>
+<tr>
+<td>space-between</td>
+<td>第一个元素靠起点，最后一个元素靠终点，余下元素平均分配空间</td>
+</tr>
+<tr>
+<td>space-around</td>
+<td>每个元素两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍</td>
+</tr>
+<tr>
+<td>space-evenly</td>
+<td>元素间距离平均分配</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
 ]]></content>
     </entry>
     <entry>

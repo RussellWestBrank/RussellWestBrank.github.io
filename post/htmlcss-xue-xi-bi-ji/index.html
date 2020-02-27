@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>HTML、CSS学习笔记 | Gridea</title>
-<link rel="shortcut icon" href="https://RussellWestBrank.github.io/favicon.ico?v=1582766041909">
+<link rel="shortcut icon" href="https://RussellWestBrank.github.io/favicon.ico?v=1582803597430">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://RussellWestBrank.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="HTML、CSS学习笔记 | Gridea - Atom Feed" href="https://RussellWestBrank.github.io/atom.xml">
@@ -27,7 +27,7 @@ FORM表..." />
       <div class="main-content">
         <div class="site-header">
   <a href="https://RussellWestBrank.github.io">
-  <img class="avatar" src="https://RussellWestBrank.github.io/images/avatar.png?v=1582766041909" alt="">
+  <img class="avatar" src="https://RussellWestBrank.github.io/images/avatar.png?v=1582803597430" alt="">
   </a>
   <h1 class="site-title">
     Gridea
@@ -87,7 +87,7 @@ FORM表..." />
                 2020-02-26
               </span>
               <span>
-                3 min read
+                4 min read
               </span>
               
             </div>
@@ -142,6 +142,80 @@ FORM表..." />
 <h3 id="第八天"><strong>第八天</strong></h3>
 <p>1.定位：相对定位，绝对定位，粘性定位（如果同级叠加不同级顶走：标题），固定定位（固定在整个页面，导航栏、二维码、广告）</p>
 <p>2.颜色渐变例子： background:linear-gradient(to bottom,#f3f3f3,#ddd,#f3f3f3); 白灰白 #ccc 又比#ddd白</p>
+<h3 id="第九天弹性盒模型"><strong>第九天(弹性盒模型)</strong></h3>
+<ol>
+<li>
+<h5 id="displayflexdisplayinline-flex类似于行级块应用较少">display:flex（display:inline-flex类似于行级块，应用较少）</h5>
+<p>​        作用：让当前元素形成弹性盒，控制子元素（灵活元素）的布局。<br>
+​        特点：<br>
+​            a:在弹性盒里面的子元素,都能直接设置宽高。<br>
+​            b:弹性盒子里面的子元素，都是沿着“主轴”排列。  默认情况下X轴为“主轴”<br>
+​            c:让单一一个子元素在弹性盒里面左右上下居中。直接给子元素添加margin:auto即可。</p>
+</li>
+<li>
+<h5 id="flex-direction">flex-direction</h5>
+<p>​        作用：改变主轴的排列方向<br>
+​        属性值：<br>
+​            row   X轴为主轴<br>
+​            column    Y轴为主轴<br>
+​            row-reverse   X轴为主轴,反向排列<br>
+​            column-reverse   Y轴为主轴，反向排列</p>
+</li>
+<li>
+<h5 id="flex-wrap">flex-wrap</h5>
+<p>​        作用：控制弹性元素溢出换行处理</p>
+<p>​         属性值：</p>
+<p>​              a.nowrap   不换行（默认）</p>
+<p>​              b.wrap        换行</p>
+<p>​              c.wrap-reverse    反向换行</p>
+<p>​        特点：宽、高不够皆可换行</p>
+</li>
+<li>
+<h5 id="flex-flow">flex-flow</h5>
+<p>​        作用：合并flex-direction、flex-wrap</p>
+<p>​         属性值：</p>
+<p>​               a.direction+wrap</p>
+</li>
+<li>
+<h5 id="justify-content">justify-content</h5>
+<p>​        作用：控制元素在主轴上的排列方式</p>
+<p>​        属性值：</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flex-start</td>
+<td>从主轴起始段开始排列</td>
+</tr>
+<tr>
+<td>flex-end</td>
+<td>从主轴末端开始排列</td>
+</tr>
+<tr>
+<td>center</td>
+<td>在主轴居中</td>
+</tr>
+<tr>
+<td>space-between</td>
+<td>第一个元素靠起点，最后一个元素靠终点，余下元素平均分配空间</td>
+</tr>
+<tr>
+<td>space-around</td>
+<td>每个元素两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍</td>
+</tr>
+<tr>
+<td>space-evenly</td>
+<td>元素间距离平均分配</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
 
               </div>
               <div class="toc-container">
@@ -165,6 +239,16 @@ FORM表..." />
 <li><a href="#%E7%AC%AC%E5%85%AD%E5%A4%A9"><strong>第六天</strong></a></li>
 <li><a href="#%E7%AC%AC%E4%B8%83%E5%A4%A9"><strong>第七天</strong></a></li>
 <li><a href="#%E7%AC%AC%E5%85%AB%E5%A4%A9"><strong>第八天</strong></a></li>
+<li><a href="#%E7%AC%AC%E4%B9%9D%E5%A4%A9%E5%BC%B9%E6%80%A7%E7%9B%92%E6%A8%A1%E5%9E%8B"><strong>第九天(弹性盒模型)</strong></a><br>
+*
+<ul>
+<li><a href="#displayflexdisplayinline-flex%E7%B1%BB%E4%BC%BC%E4%BA%8E%E8%A1%8C%E7%BA%A7%E5%9D%97%E5%BA%94%E7%94%A8%E8%BE%83%E5%B0%91">display:flex（display:inline-flex类似于行级块，应用较少）</a></li>
+<li><a href="#flex-direction">flex-direction</a></li>
+<li><a href="#flex-wrap">flex-wrap</a></li>
+<li><a href="#flex-flow">flex-flow</a></li>
+<li><a href="#justify-content">justify-content</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
