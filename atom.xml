@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://RussellWestBrank.github.io</id>
     <title>Gridea</title>
-    <updated>2020-02-27T11:54:42.492Z</updated>
+    <updated>2020-02-29T12:19:45.912Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://RussellWestBrank.github.io"/>
     <link rel="self" href="https://RussellWestBrank.github.io/atom.xml"/>
@@ -137,39 +137,125 @@
 </tbody>
 </table>
 </li>
+<li>
+<h4 id="align-items">align-items</h4>
+<p>​        作用：用于控制容器元素在交叉轴上的排列方式。</p>
+<p>​        属性值：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">选项</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">stretch</td>
+<td style="text-align:left">元素被拉伸以适应容器（默认值）</td>
+</tr>
+<tr>
+<td style="text-align:left">center</td>
+<td style="text-align:left">元素位于容器的中心</td>
+</tr>
+<tr>
+<td style="text-align:left">flex-start</td>
+<td style="text-align:left">元素位于容器的交叉轴开头</td>
+</tr>
+<tr>
+<td style="text-align:left">flex-end</td>
+<td style="text-align:left">元素位于容器的交叉轴结尾</td>
+</tr>
+</tbody>
+</table>
+</li>
 </ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://RussellWestBrank.github.io/post/hello-gridea/</id>
-        <link href="https://RussellWestBrank.github.io/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+<p>​              特点：元素宽高属性的优先级高于stretch属性</p>
+<ol start="7">
+<li>
+<h4 id="align-content">align-content</h4>
+</li>
+</ol>
+<p>​        作用：只适用于多行显示的弹性容器，它的作用是当flex容器在主轴上溢出换行处理时，且交                      叉轴上有多余的空间时，对元素的对齐处理。</p>
+<p>​       属性值：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">选项</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">stretch</td>
+<td style="text-align:left">将空间平均分配给元素</td>
+</tr>
+<tr>
+<td style="text-align:left">flex-start</td>
+<td style="text-align:left">元素紧靠主轴起点</td>
+</tr>
+<tr>
+<td style="text-align:left">flex-end</td>
+<td style="text-align:left">元素紧靠主轴终点</td>
+</tr>
+<tr>
+<td style="text-align:left">center</td>
+<td style="text-align:left">元素从弹性容器中心开始</td>
+</tr>
+<tr>
+<td style="text-align:left">space-between</td>
+<td style="text-align:left">第一个元素靠起点，最后一个元素靠终点，余下元素平均分配空间</td>
+</tr>
+<tr>
+<td style="text-align:left">space-around</td>
+<td style="text-align:left">每个元素两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍</td>
+</tr>
+<tr>
+<td style="text-align:left">space-evenly</td>
+<td style="text-align:left">元素间距离平均分配</td>
+</tr>
+</tbody>
+</table>
+<h2 id="弹性元素">弹性元素</h2>
+<p>放在容器盒子中的元素即为容器元素。</p>
+<ul>
+<li>不能使用float与clear规则</li>
+<li>弹性元素均为块元素</li>
+<li>绝对定位的弹性元素不参与弹性布局</li>
+</ul>
+<ol start="8">
+<li>
+<h4 id="align-self">align-self</h4>
+<p>作用：用于控制单个元素在交叉轴上的排列方式，<code>align-items</code> 用于控制容器中所有元素的排列，  而 <code>align-self</code> 用于控制一个弹性元素的交叉轴排列。</p>
+<p>特点：与article div:nth-of-type(1)配合使用。</p>
+</li>
+<li>
+<h4 id="flex-grow">flex-grow</h4>
+<p>作用：用于将弹性盒子的可用空间，分配给弹性元素。可以使用整数或小数声明。</p>
+<p>特点：与article div:nth-of-type(1)配合使用，可逐个分配。</p>
+</li>
+<li>
+<h4 id="flex-shrink">flex-shrink</h4>
+<p>作用：与 <code>flex-grow</code> 相反 <code>flex-shrink</code> 是在弹性盒子装不下元素时定义的缩小值。</p>
+</li>
+<li>
+<h4 id="flex-basis暂时不知道为什么不用weight要用flex-basis">flex-basis(暂时不知道为什么不用weight要用flex-basis)</h4>
+<p>作用：定义主轴方向items的大小，单位可以是长度单位也可以是百分比。</p>
+<p>特点：</p>
+<ul>
+<li>优先级：max-height&gt;flex-basis&gt;height</li>
+</ul>
+</li>
+<li>
+<h4 id="flex">flex</h4>
+<p>作用：flex是flex-grow、flex-shrink 、flex-basis缩写组合。</p>
+<blockquote>
+<p>建议使用 flex 面不要单独使用 flex-grow / flew-shrink / flex-basis 。</p>
+</blockquote>
+<p>​           例：flex:1 0 200px;</p>
+<p>​          定义平均分配剩余空间，并不进行尺寸缩小，基础尺寸为200px。</p>
+</li>
+<li></li>
+</ol>
 ]]></content>
     </entry>
 </feed>

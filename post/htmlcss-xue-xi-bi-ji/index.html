@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>HTML、CSS学习笔记 | Gridea</title>
-<link rel="shortcut icon" href="https://RussellWestBrank.github.io/favicon.ico?v=1582804476122">
+<link rel="shortcut icon" href="https://RussellWestBrank.github.io/favicon.ico?v=1582978775086">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://RussellWestBrank.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="HTML、CSS学习笔记 | Gridea - Atom Feed" href="https://RussellWestBrank.github.io/atom.xml">
@@ -27,7 +27,7 @@ FORM表..." />
       <div class="main-content">
         <div class="site-header">
   <a href="https://RussellWestBrank.github.io">
-  <img class="avatar" src="https://RussellWestBrank.github.io/images/avatar.png?v=1582804476122" alt="">
+  <img class="avatar" src="https://RussellWestBrank.github.io/images/avatar.png?v=1582978775086" alt="">
   </a>
   <h1 class="site-title">
     Gridea
@@ -87,7 +87,7 @@ FORM表..." />
                 2020-02-26
               </span>
               <span>
-                4 min read
+                6 min read
               </span>
               
             </div>
@@ -215,6 +215,124 @@ FORM表..." />
 </tbody>
 </table>
 </li>
+<li>
+<h4 id="align-items">align-items</h4>
+<p>​        作用：用于控制容器元素在交叉轴上的排列方式。</p>
+<p>​        属性值：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">选项</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">stretch</td>
+<td style="text-align:left">元素被拉伸以适应容器（默认值）</td>
+</tr>
+<tr>
+<td style="text-align:left">center</td>
+<td style="text-align:left">元素位于容器的中心</td>
+</tr>
+<tr>
+<td style="text-align:left">flex-start</td>
+<td style="text-align:left">元素位于容器的交叉轴开头</td>
+</tr>
+<tr>
+<td style="text-align:left">flex-end</td>
+<td style="text-align:left">元素位于容器的交叉轴结尾</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p>​              特点：元素宽高属性的优先级高于stretch属性</p>
+<ol start="7">
+<li>
+<h4 id="align-content">align-content</h4>
+</li>
+</ol>
+<p>​        作用：只适用于多行显示的弹性容器，它的作用是当flex容器在主轴上溢出换行处理时，且交                      叉轴上有多余的空间时，对元素的对齐处理。</p>
+<p>​       属性值：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">选项</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">stretch</td>
+<td style="text-align:left">将空间平均分配给元素</td>
+</tr>
+<tr>
+<td style="text-align:left">flex-start</td>
+<td style="text-align:left">元素紧靠主轴起点</td>
+</tr>
+<tr>
+<td style="text-align:left">flex-end</td>
+<td style="text-align:left">元素紧靠主轴终点</td>
+</tr>
+<tr>
+<td style="text-align:left">center</td>
+<td style="text-align:left">元素从弹性容器中心开始</td>
+</tr>
+<tr>
+<td style="text-align:left">space-between</td>
+<td style="text-align:left">第一个元素靠起点，最后一个元素靠终点，余下元素平均分配空间</td>
+</tr>
+<tr>
+<td style="text-align:left">space-around</td>
+<td style="text-align:left">每个元素两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍</td>
+</tr>
+<tr>
+<td style="text-align:left">space-evenly</td>
+<td style="text-align:left">元素间距离平均分配</td>
+</tr>
+</tbody>
+</table>
+<h2 id="弹性元素">弹性元素</h2>
+<p>放在容器盒子中的元素即为容器元素。</p>
+<ul>
+<li>不能使用float与clear规则</li>
+<li>弹性元素均为块元素</li>
+<li>绝对定位的弹性元素不参与弹性布局</li>
+</ul>
+<ol start="8">
+<li>
+<h4 id="align-self">align-self</h4>
+<p>作用：用于控制单个元素在交叉轴上的排列方式，<code>align-items</code> 用于控制容器中所有元素的排列，  而 <code>align-self</code> 用于控制一个弹性元素的交叉轴排列。</p>
+<p>特点：与article div:nth-of-type(1)配合使用。</p>
+</li>
+<li>
+<h4 id="flex-grow">flex-grow</h4>
+<p>作用：用于将弹性盒子的可用空间，分配给弹性元素。可以使用整数或小数声明。</p>
+<p>特点：与article div:nth-of-type(1)配合使用，可逐个分配。</p>
+</li>
+<li>
+<h4 id="flex-shrink">flex-shrink</h4>
+<p>作用：与 <code>flex-grow</code> 相反 <code>flex-shrink</code> 是在弹性盒子装不下元素时定义的缩小值。</p>
+</li>
+<li>
+<h4 id="flex-basis暂时不知道为什么不用weight要用flex-basis">flex-basis(暂时不知道为什么不用weight要用flex-basis)</h4>
+<p>作用：定义主轴方向items的大小，单位可以是长度单位也可以是百分比。</p>
+<p>特点：</p>
+<ul>
+<li>优先级：max-height&gt;flex-basis&gt;height</li>
+</ul>
+</li>
+<li>
+<h4 id="flex">flex</h4>
+<p>作用：flex是flex-grow、flex-shrink 、flex-basis缩写组合。</p>
+<blockquote>
+<p>建议使用 flex 面不要单独使用 flex-grow / flew-shrink / flex-basis 。</p>
+</blockquote>
+<p>​           例：flex:1 0 200px;</p>
+<p>​          定义平均分配剩余空间，并不进行尺寸缩小，基础尺寸为200px。</p>
+</li>
+<li></li>
 </ol>
 
               </div>
@@ -247,6 +365,18 @@ FORM表..." />
 <li><a href="#flex-wrap">flex-wrap</a></li>
 <li><a href="#flex-flow">flex-flow</a></li>
 <li><a href="#justify-content">justify-content</a></li>
+<li><a href="#align-items">align-items</a></li>
+<li><a href="#align-content">align-content</a></li>
+</ul>
+</li>
+<li><a href="#%E5%BC%B9%E6%80%A7%E5%85%83%E7%B4%A0">弹性元素</a><br>
+*
+<ul>
+<li><a href="#align-self">align-self</a></li>
+<li><a href="#flex-grow">flex-grow</a></li>
+<li><a href="#flex-shrink">flex-shrink</a></li>
+<li><a href="#flex-basis%E6%9A%82%E6%97%B6%E4%B8%8D%E7%9F%A5%E9%81%93%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E7%94%A8weight%E8%A6%81%E7%94%A8flex-basis">flex-basis(暂时不知道为什么不用weight要用flex-basis)</a></li>
+<li><a href="#flex">flex</a></li>
 </ul>
 </li>
 </ul>
@@ -258,15 +388,6 @@ FORM表..." />
           </article>
         </div>
 
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://RussellWestBrank.github.io/post/hello-gridea/">
-              <h3 class="post-title">
-                Hello Gridea
-              </h3>
-            </a>
-          </div>
         
 
         
