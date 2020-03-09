@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://RussellWestBrank.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-03-09T04:02:17.632Z</updated>
+    <title>daydaystudy</title>
+    <updated>2020-03-09T04:04:35.300Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://RussellWestBrank.github.io"/>
     <link rel="self" href="https://RussellWestBrank.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>https://RussellWestBrank.github.io/images/avatar.png</logo>
     <icon>https://RussellWestBrank.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, daydaystudy</rights>
     <entry>
         <title type="html"><![CDATA[HTML、CSS学习笔记]]></title>
         <id>https://RussellWestBrank.github.io/post/htmlcss-xue-xi-bi-ji/</id>
