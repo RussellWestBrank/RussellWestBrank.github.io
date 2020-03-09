@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>HTML、CSS学习笔记 | Gridea</title>
-<link rel="shortcut icon" href="https://RussellWestBrank.github.io/favicon.ico?v=1582978775086">
+<link rel="shortcut icon" href="https://RussellWestBrank.github.io/favicon.ico?v=1583726419633">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://RussellWestBrank.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="HTML、CSS学习笔记 | Gridea - Atom Feed" href="https://RussellWestBrank.github.io/atom.xml">
@@ -17,7 +17,7 @@ vs color picker(颜色拾取）
 HTML
 http（协议）
 Localhost=www.baidu.com(域名）
-FORM表..." />
+url(统..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -27,7 +27,7 @@ FORM表..." />
       <div class="main-content">
         <div class="site-header">
   <a href="https://RussellWestBrank.github.io">
-  <img class="avatar" src="https://RussellWestBrank.github.io/images/avatar.png?v=1582978775086" alt="">
+  <img class="avatar" src="https://RussellWestBrank.github.io/images/avatar.png?v=1583726419633" alt="">
   </a>
   <h1 class="site-title">
     Gridea
@@ -87,7 +87,7 @@ FORM表..." />
                 2020-02-26
               </span>
               <span>
-                6 min read
+                17 min read
               </span>
               
             </div>
@@ -100,6 +100,9 @@ FORM表..." />
 <h1 id="html"><strong>HTML</strong></h1>
 <p>http（协议）</p>
 <p>Localhost=www.baidu.com(域名）</p>
+<h3 id="url统一资源定位法">url(统一资源定位法)</h3>
+<p>​             中文版  协议：//主机名（域名、IP):端口号/路径/？查询字符串#瞄点</p>
+<p>​                端口号：当前电脑中使用网络的软件，随机给他分配一个编号  0~65535</p>
 <h3 id="form表单"><strong>FORM表单</strong></h3>
 <p>1.如果要被正确提交每个输入字段必须设置一个name属性</p>
 <p>2.placeholder</p>
@@ -140,12 +143,19 @@ FORM表..." />
 <p>1.字无法居中（偏上下）可以试试改变行高</p>
 <p>2.鼠标放上去有小手:cursor：pointer</p>
 <h3 id="第八天"><strong>第八天</strong></h3>
-<p>1.定位：相对定位，绝对定位，粘性定位（如果同级叠加不同级顶走：标题），固定定位（固定在整个页面，导航栏、二维码、广告）</p>
+<p>1.定位：相对定位（保留原来的空间位），绝对定位(不保留原来的空间位），粘性定位（如果同级叠加不同级顶走：标题），固定定位（固定在整个页面，导航栏、二维码、广告）</p>
 <p>2.颜色渐变例子： background:linear-gradient(to bottom,#f3f3f3,#ddd,#f3f3f3); 白灰白 #ccc 又比#ddd白</p>
-<h3 id="第九天弹性盒模型"><strong>第九天(弹性盒模型)</strong></h3>
+<h3 id="弹性盒模型移动端">弹性盒模型——移动端</h3>
+<p>感悟</p>
+<ul>
+<li>一个盒子它既可以是弹性元素又可以是弹性盒子，flex属性是弹性元素的属性</li>
+<li>布局的时候和浮动一样，通过一个个弹性盒子不断缩小控制范围。</li>
+<li>cursor:pointer（点击效果 变蓝）</li>
+<li>巧用弹性盒模型可以改变元素排列方式（行级元素变块级元素）</li>
+</ul>
 <ol>
 <li>
-<h5 id="displayflexdisplayinline-flex类似于行级块应用较少">display:flex（display:inline-flex类似于行级块，应用较少）</h5>
+<h4 id="displayflexdisplayinline-flex类似于行级块应用较少">display:flex（display:inline-flex类似于行级块，应用较少）</h4>
 <p>​        作用：让当前元素形成弹性盒，控制子元素（灵活元素）的布局。<br>
 ​        特点：<br>
 ​            a:在弹性盒里面的子元素,都能直接设置宽高。<br>
@@ -153,7 +163,7 @@ FORM表..." />
 ​            c:让单一一个子元素在弹性盒里面左右上下居中。直接给子元素添加margin:auto即可。</p>
 </li>
 <li>
-<h5 id="flex-direction">flex-direction</h5>
+<h4 id="flex-direction">flex-direction</h4>
 <p>​        作用：改变主轴的排列方向<br>
 ​        属性值：<br>
 ​            row   X轴为主轴<br>
@@ -162,7 +172,7 @@ FORM表..." />
 ​            column-reverse   Y轴为主轴，反向排列</p>
 </li>
 <li>
-<h5 id="flex-wrap">flex-wrap</h5>
+<h4 id="flex-wrap">flex-wrap</h4>
 <p>​        作用：控制弹性元素溢出换行处理</p>
 <p>​         属性值：</p>
 <p>​              a.nowrap   不换行（默认）</p>
@@ -171,13 +181,13 @@ FORM表..." />
 <p>​        特点：宽、高不够皆可换行</p>
 </li>
 <li>
-<h5 id="flex-flow">flex-flow</h5>
+<h4 id="flex-flow">flex-flow</h4>
 <p>​        作用：合并flex-direction、flex-wrap</p>
 <p>​         属性值：</p>
 <p>​               a.direction+wrap</p>
 </li>
 <li>
-<h5 id="justify-content">justify-content</h5>
+<h4 id="justify-content">justify-content</h4>
 <p>​        作用：控制元素在主轴上的排列方式</p>
 <p>​        属性值：</p>
 <table>
@@ -251,8 +261,6 @@ FORM表..." />
 <ol start="7">
 <li>
 <h4 id="align-content">align-content</h4>
-</li>
-</ol>
 <p>​        作用：只适用于多行显示的弹性容器，它的作用是当flex容器在主轴上溢出换行处理时，且交                      叉轴上有多余的空间时，对元素的对齐处理。</p>
 <p>​       属性值：</p>
 <table>
@@ -293,14 +301,14 @@ FORM表..." />
 </tr>
 </tbody>
 </table>
-<h2 id="弹性元素">弹性元素</h2>
+<h4 id="弹性元素">弹性元素</h4>
 <p>放在容器盒子中的元素即为容器元素。</p>
 <ul>
 <li>不能使用float与clear规则</li>
 <li>弹性元素均为块元素</li>
 <li>绝对定位的弹性元素不参与弹性布局</li>
 </ul>
-<ol start="8">
+</li>
 <li>
 <h4 id="align-self">align-self</h4>
 <p>作用：用于控制单个元素在交叉轴上的排列方式，<code>align-items</code> 用于控制容器中所有元素的排列，  而 <code>align-self</code> 用于控制一个弹性元素的交叉轴排列。</p>
@@ -332,7 +340,401 @@ FORM表..." />
 <p>​           例：flex:1 0 200px;</p>
 <p>​          定义平均分配剩余空间，并不进行尺寸缩小，基础尺寸为200px。</p>
 </li>
-<li></li>
+<li>
+<h4 id="order">order</h4>
+<p>作用：用于控制弹性元素的位置，默认为 <code>order:0</code> 数值越小越在前面，可以负数或整数。</p>
+<p>（通过JS，改变元素间的位置）</p>
+</li>
+<li>
+<h4 id="margin">margin</h4>
+<p>作用：在弹性布局中对元素使用<code>margin-right:auto</code> 等形式可以自动撑满空间。</p>
+<p>​     有点类似于让下一个元素向右浮动</p>
+</li>
+</ol>
+<h3 id="栅格系统">栅格系统</h3>
+<h1 id="javascript">javascript</h1>
+<ol>
+<li>
+<h4 id="脚本定义">脚本定义</h4>
+<p>内嵌脚本</p>
+<p>​    属性：<script></script> 类似于CSS的<style>标签</p>
+<p>外部文件</p>
+<p>属性：<script src=""></script> 类似于CSS的<link>标签</p>
+<p>避免延迟</p>
+<p>因为js加载并解析后才会显示<body>标签中的内容,所以将js脚本放在<body>标签中的最后</p>
+</li>
+<li>
+<h4 id="变量声明">变量声明</h4>
+<p>命名规则</p>
+<p>​    属性：数字、字母、下划线</p>
+<p>​    特点：</p>
+<ul>
+<li>
+<p>尽量不要使用$,因为会和库冲突</p>
+</li>
+<li>
+<p>尽量不要使用name，因为会和dom冲突</p>
+</li>
+</ul>
+<p>变量声明</p>
+<p>​     属性：var、let、const</p>
+<p>​     特点：</p>
+<ul>
+<li>不声明变量，可能导致污染全局变量（解决方法使用&quot;use strict&quot;模式，强制规范书写)</li>
+<li>尽量使用let、const，因为var有变量提升的特点，会污染全局，而let、const有块作用域的特性。</li>
+<li>var会改变window库里的变量，let不会。</li>
+<li>const声明的是常量（一般用大写），在一个作用域内常量不允许更改。可以修改引用类型变量的值。</li>
+</ul>
+<p>const特点：在进行删除修改时，只要不改变储存地址就不会报错（引用类型）。</p>
+</li>
+<li>
+<h4 id="objectfreeze">Object.freeze</h4>
+<p>作用：冻结变量后，变量不可以修改，使用严格模式会报出错误。</p>
+<p>举例：</p>
+<pre><code>&quot;use strict&quot;
+const INFO = {
+  url: 'https://www.houdunren.com',
+  port: '8080'
+};
+Object.freeze(INFO);
+INFO.port = '443'; //Cannot assign to read only property
+console.log(INFO);
+</code></pre>
+</li>
+<li>
+<h4 id="传值与传址">传值与传址</h4>
+<p>区别：基本类型（指数值、字符串等简单数据类型）直接赋值是传值</p>
+<p>​           引用数据类型直接赋值是传址（变量的指针）</p>
+</li>
+<li>
+<h4 id="严格模式">严格模式</h4>
+<p>作用：规范格式，使程序应用面更广泛</p>
+<p>属性：&quot;user strict&quot;</p>
+<p>特点：作用域在下一级，不会往上</p>
+</li>
+<li>
+<h4 id="switch">switch</h4>
+<p>作用：多选（类似与多个if结构）</p>
+<p>特点：</p>
+<ul>
+<li>与case、break连用，程序一直往下执行直到碰到break;</li>
+<li>switch()变量名为定义在（）内写true</li>
+</ul>
+</li>
+<li>
+<h4 id="forin">for/in</h4>
+<p>作用：用于遍历对象的所有属性，<code>for/in</code>主要用于遍历对象，不建议用来遍历数组。</p>
+</li>
+<li>
+<h4 id="forof">for/of</h4>
+<p>作用：用来遍历 Arrays（数组）, Strings（字符串）, Maps（映射）, Sets（集合）等可迭代的数据结构。</p>
+<p>与 <code>for/in</code> 不同的是 <code>for/of</code> 每次循环取其中的值而不是索引。</p>
+</li>
+<li>
+<h4 id="typeof">typeof</h4>
+<p>作用：用于返回数据的类型</p>
+</li>
+<li>
+<h4 id="instanceof">instanceof</h4>
+<p>作用：用于判断数据的类型</p>
+<p>特点：<code>typeof</code>不能区分数组，但<code>instanceof</code>则可以。</p>
+</li>
+<li>
+<h4 id="函数语法">函数语法</h4>
+<p>函数声明：</p>
+<p>无参数无返回值</p>
+<p>​         function 函数名（）{</p>
+<p>​                 函数体（具体要执行的代码）；</p>
+<p>​        }</p>
+<p>有参数无返回值的函数</p>
+<p>​         function 函数名（形参1，形参2...）{</p>
+<p>​                 函数体;</p>
+<p>}</p>
+<p>有参数有返回值的函数</p>
+<p>​          function 函数名（形参1，形参2...){</p>
+<p>​                 函数体；</p>
+<p>​                  return 表达式；</p>
+<p>}</p>
+<p>匿名函数</p>
+<pre><code class="language-text">let hd = function(num) {
+  return ++num;
+};
+</code></pre>
+<!--函数运行的时候，如果遇到return的关键字，整个函数会终止-->
+  <!--见名思意，函数名必须体现其具体功能-->
+<p>​       函数调用：</p>
+<p>​                  格式：函数名（）；</p>
+<p>如何选择函数类型：</p>
+<ol>
+<li>是否有不确定值（不确定值=形参）</li>
+<li>是否需要返回值</li>
+</ol>
+<p>作用：</p>
+<ul>
+<li>使程序变得简短而清晰</li>
+<li>有利于程序维护</li>
+<li>可以提高程序开发效率</li>
+<li>提高了代码的重用性</li>
+</ul>
+</li>
+<li>
+<h4 id="arguments">arguments</h4>
+<p>作用：用来存储实际传入的参数。</p>
+<p>属性：</p>
+<ul>
+<li>每个函数内部都有一个argumengts,系统内置的。</li>
+<li>arguments.length输出当前里面存储的参数个数。</li>
+<li>访问某个数据arguments【下标】</li>
+</ul>
+<p>特点：</p>
+<ul>
+<li>优先使用形参，除非特殊情况（形参个数不确定）</li>
+</ul>
+</li>
+<li>
+<h4 id="递归">递归</h4>
+<p>满足一下三个特点就是递归：</p>
+<ol>
+<li>​     函数自己调用自己</li>
+<li>一般情况有参数</li>
+<li>一般情况有return</li>
+</ol>
+<p>一般公司不允许使用，因为它倒推的特定会瞬间占用释放内存</p>
+<p>方法：</p>
+<ol>
+<li>首先去找临界值，即无需计算，获得的值。</li>
+<li>找这一次和上一次的关系。</li>
+<li>假设当前函数已经可以使用，调用自身上次计算</li>
+</ol>
+<p>例：</p>
+<p>​     兔子繁殖问题，设有一对新生兔子，从第四个月开始他们每个月月初都生一对兔子，新生兔子    从第四个月月初开始又每个月生一对兔子，按此规律，并假定兔子没有死亡，n（&lt;=20)个月月末共有多少兔子？（斐波那契数列）</p>
+<p><code>function rabbit(n){</code></p>
+<p>​      <code>if(n&lt;4){</code></p>
+<p>​              <code>return1;</code></p>
+<p>​       <code>}</code></p>
+<p>​      <code>return rabbit(n-1)+rabbit(n-3);</code></p>
+<p><code>}</code></p>
+</li>
+<li>
+<h4 id="数组">数组</h4>
+<p>声明数组：</p>
+<ol>
+<li>
+<p>通过new创建数组</p>
+<p>​     参数：传入任意的数据，存储到数组中。</p>
+</li>
+<li>
+<p>省略new运算符创建数组</p>
+<p>【注】上述两种方法，传入参数只有一个，并且是数字的时候，直接声明的是此数组的长度</p>
+<p>解决以上问题的方法：</p>
+<p>​         1.使用Array.of进行声明</p>
+<p>​         2.使用数组常量进行声明</p>
+</li>
+<li>
+<p>数组常量进行赋值。（js一般使用中括号[]）</p>
+</li>
+</ol>
+<p>数组类型：引用数组类型（数组的变量存储的是数组的地址）</p>
+<p>数组结构：</p>
+<ol>
+<li>
+<p>​     栈结构（木盆）</p>
+<p>结构：同一头进，同一头出</p>
+<p>特点：先进后出。</p>
+<p>两个形成栈结构的方法：</p>
+<p>​           push:</p>
+<p>​                    格式：数组.push(参数1，参数2...)</p>
+<p>​                    作用：给数组的末尾添加元素。</p>
+<p>​                    返回值：插完元素后数组的长度。</p>
+<p>​            pop:</p>
+<p>​                    格式：数组.pop()</p>
+<p>​                    特点：没有参数</p>
+<p>​                    作用：从数组末尾取下一个元素</p>
+<p>​                    返回值：数组末尾元素</p>
+</li>
+<li>
+<p>队列结构</p>
+<p>​     结构：从末尾进，从头部出。</p>
+<p>​     特点：先进先出</p>
+<p>​          push</p>
+<p>​          shift:</p>
+<p>​               格式:数组.shift()</p>
+<p>​               特点：没有参数</p>
+<p>​               作用：从数组的头部取一个元素</p>
+<p>​               返回值：数组头部元素</p>
+<p>​          unshift:</p>
+<p>​              格式:数组.unshift()</p>
+<p>​               作用：从数组的头部插入元素</p>
+<p>​               返回值：插完元素以后的数组长度</p>
+<h5 id="concat方法">concat()方法</h5>
+<p>​          作用：拷贝原数组，生成新地址传给新数组</p>
+<p>​          格式：数组.concat(数组，数据...);</p>
+<p>​          返回值：合并成的新数组。原数组不会改变。</p>
+<p>使用展开语法来合并数组相比 <code>concat</code> 要更简单，使用<code>...</code> 可将数组展开为多个值。</p>
+<pre><code class="language-js">let a = [1, 2, 3];
+let b = ['a', 'wqq', ...a];
+console.log(b); //[&quot;a&quot;, &quot;wqq&quot;, 1, 2, 3]
+</code></pre>
+<h5 id="slice方法">slice()方法</h5>
+<p>​           作用：可以基于当前数组获得指定区域元素，提取出元素获得新数组。</p>
+<p>​           格式：数组.slice(start,end);【start，end)</p>
+<p>​           返回值：生成的新数组，原数组不变。</p>
+<h5 id="splice方法">splice()方法</h5>
+<p>​           作用：增加删除修改数组</p>
+<p>​           格式：数组.splice(start,length,数组1，数据2...)</p>
+<p>​                  参数：start：开始截取的位置</p>
+<p>​                              length：截取元素的长度</p>
+<p>​                              第三个参数:在元素开始截取位置插入元素</p>
+<p>​               返回值：截取下来的元素组成的数组</p>
+<h5 id="join">join()</h5>
+<p>​       作用：将数组中的元素，用传入的拼接符，拼接成一个字符串 （原拼接符为逗号）</p>
+<p>​       格式：数组.join(字符串)</p>
+<p>​       返回值：拼接好的字符串。</p>
+<h5 id="reverse">reverse()</h5>
+<p>​       作用：将数组下标进行倒叙排列</p>
+<p>​       格式：数组.reverse()</p>
+<p>​       返回值：倒叙排列的数组</p>
+<h5 id="sort">sort</h5>
+<p>​      作用：数组排序</p>
+<p>​       格式：数组.sort() 默认从小到大排序，按照字符串排序</p>
+<p>​       实际操作（按照大小排序）：</p>
+<p><code>数组.sort(function(value,value2){</code></p>
+<p>​               <code>return value1-value2；(从小到大)</code></p>
+<p>​               <code>return value2-value1; (从大到小)</code></p>
+<p><code>}</code></p>
+<p>``</p>
+<p>​</p>
+<p>​</p>
+<p>​</p>
+</li>
+</ol>
+</li>
+<li>
+<h4 id="math对象"><strong>Math对象</strong></h4>
+<p><strong>Math对象用于执行数学任务。</strong></p>
+<p><strong>Math对象的常用函数</strong></p>
+<p>​</p>
+<p>■Math.random() //返回[0,1)之间的随机数</p>
+<p>■Math.max(num1, num2) //返回较大的数</p>
+<p>■Math.min(num1, num2) //返回较小的数</p>
+<p>■Math.abs(num) //绝对值</p>
+<p>■Math.ceil(19.3) //向上取整</p>
+<p>■Math.floor(11.8) //向下取整</p>
+<p>■Math.pow(x,y) //x的y次方</p>
+<p>■Math.sqrt(num) //开平方</p>
+</li>
+<li>
+<h4 id="parseint">parseInt</h4>
+<p>作用：解析字符串，返回整数。</p>
+</li>
+<li>
+<h4 id="字符串string">字符串(string)</h4>
+<h5 id="声明定义">声明定义</h5>
+<p>​          格式：</p>
+<ol>
+<li>
+<p>通过new string()创建数组</p>
+<p>​     参数：传入任意的数字符，存储到字符串中。</p>
+</li>
+<li>
+<p>省略new运算符创建数组</p>
+</li>
+</ol>
+<h5 id="连接运算符">连接运算符</h5>
+<p>​       1.使用 <code>+</code> 可以连接多个内容组合成字符串，经常用于组合输出内容使用。</p>
+<p>​       2.使用 <code>+=</code> 在字符串上加字符内容</p>
+<h5 id="模板字面量">模板字面量？？？</h5>
+<h5 id="length">length</h5>
+<p>​      作用：获取字符串长度</p>
+<p>​       格式：字符串.length</p>
+<h5 id="touppercase">toUpperCase()</h5>
+<p>​       作用：将字符串转换成大写</p>
+<p>​       格式：字符串.toUpperCase()</p>
+<p>​                   字符串.toLowerCase()    转换成小写</p>
+<h5 id="trim">trim</h5>
+<p>​      作用：删除字符串左右的空白</p>
+<p>​      格式：字符串.trim()</p>
+<p>​                  字符串.trimleft()   删除左边空白</p>
+<p>时间库：moment.js</p>
+<p>​        Moment.js是一个轻量级的JavaScript时间库，它方便了日常开发中对时间的操作，提高了开  发效率</p>
+</li>
+<li>
+<h4 id="boolean">Boolean</h4>
+<p>比较不等于转化  比较：转换为数值类型，转换不了的显示为nun</p>
+<p>​                              转换：转换为boolean类型</p>
+<p>​</p>
+</li>
+<li>
+<h4 id="对象">对象</h4>
+<h5 id="思想">思想</h5>
+<figure data-type="image" tabindex="1"><img src="C:%5CUsers%5CRUSS%5CDesktop%5C%E4%B8%8A%E8%AF%BE%E6%88%AA%E5%9B%BE%5C%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3.png" alt="" loading="lazy"></figure>
+<p><code>let car={</code></p>
+<p>​      <code>speed:80,</code></p>
+<p>​      <code>run:function(road){</code></p>
+<p>​        <code>return road.length/car.speed</code></p>
+<p>​      <code>}</code></p>
+<p>​     <code>};</code></p>
+<p>​     <code>let qiao={</code></p>
+<p>​      <code>length:600</code></p>
+<p>​     <code>};</code></p>
+<p>​     <code>console.log(car.run(qiao).toFixed(2));</code></p>
+<h5 id="声明">声明：</h5>
+<p>​     1.通过new运算符声明对象。</p>
+<p>​     2.通过省略new。</p>
+<p>​     3.对象常量赋值（使用大括号，代表对象）</p>
+<h5 id="定时器">定时器</h5>
+<figure data-type="image" tabindex="2"><img src="C:%5CUsers%5CRUSS%5CDesktop%5C%E4%B8%8A%E8%AF%BE%E6%88%AA%E5%9B%BE%5C%E5%AE%9A%E6%97%B6%E5%99%A81.png" alt="定时器1" loading="lazy"></figure>
+<h5 id="显示当前时间匿名函数声明">显示当前时间（匿名函数声明）</h5>
+<p>​     var timer=setInterval(function(){</p>
+<p>​         要执行的代码</p>
+<p>​    }毫秒数)；</p>
+<p>​    <img src="C:%5CUsers%5CRUSS%5CDesktop%5C%E4%B8%8A%E8%AF%BE%E6%88%AA%E5%9B%BE%5C%E5%AE%9A%E6%97%B6%E5%99%A82.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<h4 id="bombrower-object-model">BOM(brower object model)</h4>
+<h5 id="系统对话框">系统对话框</h5>
+<figure data-type="image" tabindex="3"><img src="C:%5CUsers%5CRUSS%5CDesktop%5C%E4%B8%8A%E8%AF%BE%E6%88%AA%E5%9B%BE%5C%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%AF%9D%E6%A1%86.png" alt="系统对话框" loading="lazy"></figure>
+<h4 id="open方法">open()方法</h4>
+<p>​       第一个参数：跳转的url 打开一个新窗口，加载url</p>
+<p>​       第二个参数：字符串，给打开的窗口起一个名字</p>
+<p>​       第三个参数：一串特殊含义的字符串，可以控制打开窗口的属性</p>
+<h4 id="history对象">history对象</h4>
+<p>​    <img src="C:%5CUsers%5CRUSS%5CDesktop%5C%E4%B8%8A%E8%AF%BE%E6%88%AA%E5%9B%BE%5Chistory%E5%AF%B9%E8%B1%A1.png" alt="history对象" loading="lazy"></p>
+<h4 id="location方法">location方法</h4>
+<p>​    location.assign(‘<a href="http://www.baidu.com/">http://www.baidu.com</a>’); //跳转到指定的URL</p>
+<p>​    location.replace(“<a href="http://www.baidu.com/">http://www.baidu.com</a>”);    //可以避免产生跳转前的历史记录</p>
+<p>​    location.reload(); //最有效的重新加载,有可能缓存加载</p>
+<p>​    location.reload(true); //强制加载,从服务器源头重新加载</p>
+<p>​</p>
+</li>
+<li>
+<h3 id="domdocument-object-model">DOM(document object model)</h3>
+<p>DOM是网页中的用来表示文档中对象的标准模型，通过JavaScript可以对网页中的所有DOM对象进行操作，是由万维网联盟W3C组织制定的标准编程接口。</p>
+<p>查找元素节点方法：</p>
+<p><strong>1.getElementById方法</strong></p>
+<p>​         格式：document.getElementById('ID')</p>
+<p>​         返回值：该 元素的 HTMLDivElement 对象</p>
+<p><strong>2、getElementsByTagName()方法</strong></p>
+<p>​          格式：node..getElementsByTagName(&quot;标签名&quot;）</p>
+<p>​          作用：从node节点开始，通过标签名获取符合条件的元素节点</p>
+<p>​          返回值：伪数组\类数组 （因为返回的是一组标签名相同的元素)</p>
+<p><strong>3、getElementsByClassName()方法</strong> ie8以下不兼容</p>
+<p>​          格式：node..getElementsByClassName(&quot;class名字&quot;）</p>
+<p>​          作用：从node节点开始，通过class名字获取符合条件的元素节点</p>
+<p>​          返回值：伪数组\类数组 （因为返回的是一组标签名相同的元素)</p>
+<p><strong>4、getElementsByClassName()方法</strong></p>
+<p>​           作用：通过name属性的值获取符合条件的元素节点</p>
+<p>​                【注】一般用在表单元素，每一个表单元素都要有name属性</p>
+<p><strong>5、document.querySelector()方法</strong></p>
+<p>​             格式：document.querySelector(&quot;CSS格式字符串&quot;)</p>
+<p>​            返回值：一个元素节点，找到符合条件的第一个元素节点</p>
+<p><strong>6、document.querySelector()方法</strong></p>
+<p>​             格式：document.querySelectorAll(&quot;CSS格式字符串&quot;)</p>
+<p>​            返回值：位数组</p>
+<p>解决IE8以下getElementsByClassName()方法不兼容问题</p>
+<figure data-type="image" tabindex="4"><img src="C:%5CUsers%5CRUSS%5CDesktop%5C%E4%B8%8A%E8%AF%BE%E6%88%AA%E5%9B%BE%5C%E8%A7%A3%E5%86%B3class%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98.png" alt="解决class兼容问题" loading="lazy"></figure>
+<p>​</p>
+</li>
 </ol>
 
               </div>
@@ -342,6 +744,7 @@ FORM表..." />
 <li><a href="#html"><strong>HTML</strong></a><br>
 *
 <ul>
+<li><a href="#url%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BD%8D%E6%B3%95">url(统一资源定位法)</a></li>
 <li><a href="#form%E8%A1%A8%E5%8D%95"><strong>FORM表单</strong></a></li>
 <li><a href="#html5">HTML5</a></li>
 </ul>
@@ -357,8 +760,7 @@ FORM表..." />
 <li><a href="#%E7%AC%AC%E5%85%AD%E5%A4%A9"><strong>第六天</strong></a></li>
 <li><a href="#%E7%AC%AC%E4%B8%83%E5%A4%A9"><strong>第七天</strong></a></li>
 <li><a href="#%E7%AC%AC%E5%85%AB%E5%A4%A9"><strong>第八天</strong></a></li>
-<li><a href="#%E7%AC%AC%E4%B9%9D%E5%A4%A9%E5%BC%B9%E6%80%A7%E7%9B%92%E6%A8%A1%E5%9E%8B"><strong>第九天(弹性盒模型)</strong></a><br>
-*
+<li><a href="#%E5%BC%B9%E6%80%A7%E7%9B%92%E6%A8%A1%E5%9E%8B%E7%A7%BB%E5%8A%A8%E7%AB%AF">弹性盒模型——移动端</a>
 <ul>
 <li><a href="#displayflexdisplayinline-flex%E7%B1%BB%E4%BC%BC%E4%BA%8E%E8%A1%8C%E7%BA%A7%E5%9D%97%E5%BA%94%E7%94%A8%E8%BE%83%E5%B0%91">display:flex（display:inline-flex类似于行级块，应用较少）</a></li>
 <li><a href="#flex-direction">flex-direction</a></li>
@@ -367,18 +769,64 @@ FORM表..." />
 <li><a href="#justify-content">justify-content</a></li>
 <li><a href="#align-items">align-items</a></li>
 <li><a href="#align-content">align-content</a></li>
-</ul>
-</li>
-<li><a href="#%E5%BC%B9%E6%80%A7%E5%85%83%E7%B4%A0">弹性元素</a><br>
-*
-<ul>
+<li><a href="#%E5%BC%B9%E6%80%A7%E5%85%83%E7%B4%A0">弹性元素</a></li>
 <li><a href="#align-self">align-self</a></li>
 <li><a href="#flex-grow">flex-grow</a></li>
 <li><a href="#flex-shrink">flex-shrink</a></li>
 <li><a href="#flex-basis%E6%9A%82%E6%97%B6%E4%B8%8D%E7%9F%A5%E9%81%93%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E7%94%A8weight%E8%A6%81%E7%94%A8flex-basis">flex-basis(暂时不知道为什么不用weight要用flex-basis)</a></li>
 <li><a href="#flex">flex</a></li>
+<li><a href="#order">order</a></li>
+<li><a href="#margin">margin</a></li>
 </ul>
 </li>
+<li><a href="#%E6%A0%85%E6%A0%BC%E7%B3%BB%E7%BB%9F">栅格系统</a></li>
+</ul>
+</li>
+<li><a href="#javascript">javascript</a><br>
+*<br>
+*<br>
+* <a href="#%E8%84%9A%E6%9C%AC%E5%AE%9A%E4%B9%89">脚本定义</a><br>
+* <a href="#%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E">变量声明</a><br>
+* <a href="#objectfreeze">Object.freeze</a><br>
+* <a href="#%E4%BC%A0%E5%80%BC%E4%B8%8E%E4%BC%A0%E5%9D%80">传值与传址</a><br>
+* <a href="#%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F">严格模式</a><br>
+* <a href="#switch">switch</a><br>
+* <a href="#forin">for/in</a><br>
+* <a href="#forof">for/of</a><br>
+* <a href="#typeof">typeof</a><br>
+* <a href="#instanceof">instanceof</a><br>
+* <a href="#%E5%87%BD%E6%95%B0%E8%AF%AD%E6%B3%95">函数语法</a><br>
+* <a href="#arguments">arguments</a><br>
+* <a href="#%E9%80%92%E5%BD%92">递归</a><br>
+* <a href="#%E6%95%B0%E7%BB%84">数组</a><br>
+* <a href="#concat%E6%96%B9%E6%B3%95">concat()方法</a><br>
+* <a href="#slice%E6%96%B9%E6%B3%95">slice()方法</a><br>
+* <a href="#splice%E6%96%B9%E6%B3%95">splice()方法</a><br>
+* <a href="#join">join()</a><br>
+* <a href="#reverse">reverse()</a><br>
+* <a href="#sort">sort</a><br>
+* <a href="#math%E5%AF%B9%E8%B1%A1"><strong>Math对象</strong></a><br>
+* <a href="#parseint">parseInt</a><br>
+* <a href="#%E5%AD%97%E7%AC%A6%E4%B8%B2string">字符串(string)</a><br>
+* <a href="#%E5%A3%B0%E6%98%8E%E5%AE%9A%E4%B9%89">声明定义</a><br>
+* <a href="#%E8%BF%9E%E6%8E%A5%E8%BF%90%E7%AE%97%E7%AC%A6">连接运算符</a><br>
+* <a href="#%E6%A8%A1%E6%9D%BF%E5%AD%97%E9%9D%A2%E9%87%8F">模板字面量？？？</a><br>
+* <a href="#length">length</a><br>
+* <a href="#touppercase">toUpperCase()</a><br>
+* <a href="#trim">trim</a><br>
+* <a href="#boolean">Boolean</a><br>
+* <a href="#%E5%AF%B9%E8%B1%A1">对象</a><br>
+* <a href="#%E6%80%9D%E6%83%B3">思想</a><br>
+* <a href="#%E5%A3%B0%E6%98%8E">声明：</a><br>
+* <a href="#%E5%AE%9A%E6%97%B6%E5%99%A8">定时器</a><br>
+* <a href="#%E6%98%BE%E7%A4%BA%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E">显示当前时间（匿名函数声明）</a><br>
+* <a href="#bombrower-object-model">BOM(brower object model)</a><br>
+* <a href="#%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%AF%9D%E6%A1%86">系统对话框</a><br>
+* <a href="#open%E6%96%B9%E6%B3%95">open()方法</a><br>
+* <a href="#history%E5%AF%B9%E8%B1%A1">history对象</a><br>
+* <a href="#location%E6%96%B9%E6%B3%95">location方法</a>
+<ul>
+<li><a href="#domdocument-object-model">DOM(document object model)</a></li>
 </ul>
 </li>
 </ul>
